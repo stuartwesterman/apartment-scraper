@@ -1,15 +1,22 @@
 # apartment-scraper
 Scrape Apartment Data
 
-# Install dependencies
+### Install dependencies
+Python version:
+```
+m@im:~/workspace/code/apartment-scraper$ python3 --version
+Python 3.11.9
+m@im:~/workspace/code/apartment-scraper$
+```
+Install requirements:
 ```
 pip3 -r requirements.txt
 ```
-# Run
+### Run
 ```
 python3 getUnitListByFloor.py
 ```
-# Output
+### Output
 ```
 m@im:~/workspace/code/apartment-scraper$ python3 getUnitListByFloor.py
 --------------------
@@ -255,3 +262,9 @@ Availability: 2024-08-26
 --------------------
 --------------------
 ```
+### TODO
+Store scraped data in a time series database.
+
+Make appropriate charts and graphs. Down select based on preferred apartment location.
+
+Map apartment numbers to building number and geo-physical location.
