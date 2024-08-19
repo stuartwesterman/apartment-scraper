@@ -1,7 +1,7 @@
 # apartment-scraper
 Scrape Apartment Data
 
-### Install dependencies
+## Install dependencies
 Python version:
 ```
 m@im:~/workspace/code/apartment-scraper$ python3 --version
@@ -10,13 +10,22 @@ m@im:~/workspace/code/apartment-scraper$
 ```
 Install requirements:
 ```
-pip3 -r requirements.txt
+m@im:~/workspace/code/apartment-scraper$ pip3 install -r requirements.txt
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: beautifulsoup4==4.12.3 in /Users/m/Library/Python/3.12/lib/python/site-packages (from -r requirements.txt (line 1)) (4.12.3)
+Requirement already satisfied: requests==2.32.3 in /Users/m/Library/Python/3.12/lib/python/site-packages (from -r requirements.txt (line 2)) (2.32.3)
+Requirement already satisfied: soupsieve>1.2 in /Users/m/Library/Python/3.12/lib/python/site-packages (from beautifulsoup4==4.12.3->-r requirements.txt (line 1)) (2.5)
+Requirement already satisfied: charset-normalizer<4,>=2 in /Users/m/Library/Python/3.12/lib/python/site-packages (from requests==2.32.3->-r requirements.txt (line 2)) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /Users/m/Library/Python/3.12/lib/python/site-packages (from requests==2.32.3->-r requirements.txt (line 2)) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /Users/m/Library/Python/3.12/lib/python/site-packages (from requests==2.32.3->-r requirements.txt (line 2)) (2.2.2)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/m/Library/Python/3.12/lib/python/site-packages (from requests==2.32.3->-r requirements.txt (line 2)) (2024.7.4)
+m@im:~/workspace/code/apartment-scraper$
 ```
-### Run
+## Run
 ```
 python3 getUnitListByFloor.py
 ```
-### Output
+## Output
 ```
 m@im:~/workspace/code/apartment-scraper$ python3 getUnitListByFloor.py
 --------------------
@@ -262,7 +271,7 @@ Availability: 2024-08-26
 --------------------
 --------------------
 ```
-### TODO
+## TODO
 Store scraped data in a time series database.
 
 Make appropriate charts and graphs. Down select based on preferred apartment location.
